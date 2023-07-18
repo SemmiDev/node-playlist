@@ -1,0 +1,49 @@
+### POST /artists
+POST http://localhost:3000/api/music/artists
+Content-Type: application/json
+
+{
+  "name": "sammidev",
+  "dateOfBirth": "2001-10-20",
+  "genres": ["Pop", "Rock"]
+}
+
+### POST /songs
+POST http://localhost:3000/api/music/songs
+Content-Type: application/json
+
+{
+  "title": "Song 1",
+  "artists": ["64b677497bab4ba75f9464d1"], 
+  "album": "Album 1"
+}
+
+### POST /popular-songs
+POST http://localhost:3000/api/music/popular-songs
+Content-Type: application/json
+
+{
+  "title": "Song 1",
+  "playCount": 100,
+  "period": "2023-06",
+  "song": "64b677cd1e3f9213e978013e"
+}
+
+### GET /artists
+GET http://localhost:3000/api/music/artists
+
+### GET /songs
+GET http://localhost:3000/api/music/songs
+
+### GET /popular-songs
+GET http://localhost:3000/api/music/popular-songs
+
+### POST /play-song/<SONG_ID>
+POST http://localhost:3000/api/music/play-song/<SONG_ID>
+Content-Type: application/json
+
+### GET /artists/genre/<GENRE>
+GET http://localhost:3000/api/music/artists/genre/Rock
+
+### GET /popular-songs/top/1
+GET http://localhost:3000/api/music/popular-songs/top/1
