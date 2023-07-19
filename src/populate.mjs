@@ -14,7 +14,6 @@ const artistsData = [
     dateOfBirth: new Date('1985-03-15'),
     genres: ['R&B', 'Soul'],
   },
-  // Add more artists here...
 ];
 
 const songsData = [
@@ -44,7 +43,6 @@ const popularSongsData = [
     period: '2023-06',
     song: null, // Will be populated with the song ID later
   },
-  // Add more popular songs here...
 ];
 
 export async function deleteAllData() {
